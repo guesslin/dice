@@ -19,7 +19,7 @@ func main() {
 		fmt.Sscanf(args, "%dd%d", &num, &dice)
 	}
 	for i := int32(0); i < num; i++ {
-		result = append(result, rand.Int31n(dice))
+		result = append(result, rand.Int31n(dice)+1)
 	}
 	fmt.Printf("You roll %d dice and %v\n", num, result)
 
